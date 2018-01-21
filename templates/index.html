@@ -1,0 +1,11 @@
+<div ALIGN="center" style="border:1px solid black;margin-left: 500px;margin-right: 500px;">
+{{ GSTIN }}<br><span>**************************</span><br>
+{% for i in range(0,len) %}
+{{ prod_f[i] }}<br>
+CGST : {{ cgst_f[i] }}%<br>
+SGST : {{ sgst_f[i] }}%<br>
+QUANTITY : {{ quantity_f[i] }}<br>
+PRICE : {{ price_f[i] }} RUPPEES<br>
+<br><span>**************************</span><br>
+{% endfor %}
+</div>
