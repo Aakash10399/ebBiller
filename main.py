@@ -1,8 +1,5 @@
 from flask import Flask, render_template, request, url_for, flash, redirect, session, send_file
-try:
-	import pyodbc
-except Exception as e:
-	print str(e)
+import pyodbc
 
 app = Flask(__name__)
 @app.route('/')
